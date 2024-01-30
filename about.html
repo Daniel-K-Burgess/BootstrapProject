@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<!-- Here's the same navbar from the homepage-->
+<body class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Bikes are Fun</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Item One</a>
+                <a class="dropdown-item" href="#">Item Two</a>
+                <a class="dropdown-item" href="#">Item Three</a>
+            </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Here's some inline CSS so the text will show on the photo-->
+<style>
+    h2 {
+        text-shadow: 1px 1px white;
+    }
+</style>
+<!--This demonstrates the grid system in Bootstrap.-->
+    <div class="container text-left text-bg-dark">
+        <div class="row">
+          <div class="col">
+            <div class="card text-bg-dark">
+                <img src="landscape.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <div class="col-5">
+<!--I used a column 5 to place the text within the card in a block to the left-->
+                  <h2 class="card-text text-black">This page promotes human powered locomotion via two-wheeled, pedal powered vehicles.</h2>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <h2>Tell us about yourself</h2>
+        </div>
+      </div>
+<!--This is my forms-->
+    <div class="mb-3 bg-dark text-white">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3 bg-dark text-white">
+        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+</body>
+</html>
